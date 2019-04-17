@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>关于华星-华星公益</title>
+</head>
+<body>
+    <!-- banner部分 -->
+    <div class="paddingTop"></div>
+    <div class="banner"><img src="./img/banner_community.jpg" alt=""></div>
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="inner">
+            您的位置：
+            <a href="javascript:void(0);">首页&nbsp;</a>&gt;&nbsp;
+            <a href="javascript:void(0);">关于华星&nbsp;</a>&gt;&nbsp;
+            <span>华星公益</span>
+        </div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="main community">
+        <div class="page1">
+            <div class="inner">
+                <div class="pageLeft">
+                    <div class="title">公益大事记</div>
+                    <div class="text">公益不只是捐赠，更不是同情，也不是精英和少数人的专属，公益不是看你花了多少钱。公益和教育的本质一样是唤醒，唤醒更多向上和向善的力量，唤醒更多人的爱心，唤醒更多人去关注艺术教育贫瘠地图，唤醒更多艺术培训行业同仁，用实际行动践行公益。</div>
+                    <div class="text">真正参与公益是你自己发生变化，因为你发生变化，世界才会发生变化，世界的改变不是一个人做了很多，而是我们每个人做了一点点</div>
+                    <div class="text">——“爱要爱来”&nbsp;“公益心&nbsp;·&nbsp;教育魂”&nbsp;中国艺术教育公益行发起人邢成</div>
+                </div>
+                <div class="pageRight">
+                    <img src="./img/communityImg1.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 路线图 -->
+        <div class="page2">
+            <div class="inner">
+                <!-- 地图 -->
+                <!-- 文字 -->
+                <div class="pageRight">
+                    <div class="title">五届公益的路线图</div>
+                    <div class="text"><span class="colorRed">第一届：触碰</span>&nbsp;2014年10月&nbsp;四川·甘孜</div>
+                    <div class="text"><span class="colorRed">第二届：拥抱</span>&nbsp;2015年9月&nbsp;贵州·遵义</div>
+                    <div class="text"><span class="colorRed">第三届：西行</span>&nbsp;2016年9月&nbsp;新疆·乌苏</div>
+                    <div class="text"><span class="colorRed">第四届：融入</span>&nbsp;2017年9月&nbsp;内蒙古·太仆寺旗</div>
+                    <div class="text"><span class="colorRed">第五届：追寻</span>&nbsp;2018年9月&nbsp;甘肃·张掖</div>
+                    <img src="./img/communityPoint.png" class="communityPoint" alt="">
+                </div>
+                <div class="pageLeft">
+                    <div class="map">
+                        <canvas id="myCanvas" width="709" height="602">您的浏览器不支持canvas</canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/Map.js"></script>
+    <script src="./js/Point.js"></script>
+    <script>
+        //公益的地图
+        // $(".map").on("mouseenter","span",function(){
+        //     var top = $(this).position().top;
+        //     var left = $(this).position().left;
+        //     var src = $(this).attr("data-src");
+        //     $(".map .mapPopUp img").attr("src",src);
+        //     $(".map .mapPopUp").css({
+        //         "display":"block",
+        //         "top" : top - 90,
+        //         "left": left - 30
+        //     });
+        // });
+        // $(".map").on("mouseleave","span",function(){
+        //     $(".map .mapPopUp").css({
+        //         "display":"none",
+        //     });
+        // });
+
+        var map = new Map();
+        new Point({
+            province: "四川",
+            img : "./img/mapPopUp.png"
+        });
+        new Point({
+            province: "贵州",
+            img : "./img/mapPopUp.png"
+        });
+        new Point({
+            province: "新疆",
+            img : "./img/mapPopUp.png"
+        });
+        new Point({
+            province: "内蒙古",
+            img : "./img/mapPopUp.png"
+        });
+        new Point({
+            province: "甘肃",
+            img : "./img/mapPopUp.png"
+        });
+    </script>
+</body>
+</html>

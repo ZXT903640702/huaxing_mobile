@@ -11,6 +11,7 @@
 </head>
 <body>
     <!-- banner部分 -->
+    <div class="paddingTop"></div>
     <div class="banner">
         <img src="./img/banner_presentation.jpg" alt="">
         <div class="bannerInner">
@@ -67,6 +68,26 @@
                     <div class="itemImg"><img src="./img/awardsImg3.jpg" alt=""></div>
                     <div class="itemText">新浪教育中国影响力教育机构</div>
                 </div>
+                <div class="awardItem" data-img="./img/awardsImg4.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg4.jpg" alt=""></div>
+                    <div class="itemText">清华大学紫荆管理培训中心艺术...</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg5.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg5.jpg" alt=""></div>
+                    <div class="itemText">2015年亚洲教育论坛亚洲教育影...</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg6.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg6.jpg" alt=""></div>
+                    <div class="itemText">2015年中国社会责任公益盛典杰...</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg7.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg7.jpg" alt=""></div>
+                    <div class="itemText">2016年度中国年度影响力品牌</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg8.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg8.jpg" alt=""></div>
+                    <div class="itemText">中国音乐学院社会艺术水平考级...</div>
+                </div>
             </div>
             <!-- 分页条 -->
             <div class="pageBar">
@@ -96,20 +117,12 @@
     <script src="./js/jquery-1.9.1.min.js"></script>
     <script src="./js/common.js"></script>
     <script>
-        //计算奖项中间项的margin
-        for(var i = 0; i < $(".awards .awardItem").length; i++){
-            console.log(2 * (parseInt(i / 3) + 1) + parseInt(i / 3))
-            $(".awards .awardItem").eq(2 * (parseInt(i / 3) + 1) + parseInt(i / 3) - 1 ).css({
-                "marginLeft": 22,
-                "marginRight":22
-            });
-        }
         //点击每一个奖项的弹框
-        $(".awards").on("click",".awardItem .itemDetail",function(){
+        $(".awards").on("click",".awardItem",function(){
             $(".awardPopUp").show();
-            var imgUrl = $(this).parents(".awardItem").attr("data-img");
-            var title = $(this).parents(".awardItem").attr("data-title");
-            var text = $(this).parents(".awardItem").attr("data-cont");
+            var imgUrl = $(this).attr("data-img");
+            var title = $(this).attr("data-title");
+            var text = $(this).attr("data-cont");
             $(".awardPopUp .popCont .popImg img").attr("src",imgUrl);
             $(".awardPopUp .popCont .popTitle").html(title);
             $(".awardPopUp .popCont .popText").html(text);
