@@ -1,0 +1,314 @@
+html{
+    font-size: 100px;
+}
+body{
+    font-size: 0.14rem;
+    font-family: "MicroSoft Yahei";
+}
+/***********************************首页导航***********************************/
+.pageNav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.header{
+    position: relative;
+    box-shadow: 0px 4px 8px -5px #ccc;
+    background: #fff;
+    padding: .23rem .2rem .19rem;
+    z-index: 2;
+}
+.pageNav .header .logo{
+    margin-right: 2.38rem;
+}
+.pageNav .header .logo,.pageNav .header .search,.pageNav .header .navBtn{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pageNav .header .logo a,.pageNav .header .search a,.pageNav .header .navBtn a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.pageNav .header .logo img{
+    width: 3.3rem;
+}
+.pageNav .header .search{
+    width: .42rem;
+    height: 0.39rem;
+    background: url(../img/search.png) no-repeat center center;
+    background-size: 100%;
+    margin-right: .33rem;
+}
+.pageNav .header .search.current{
+    background-image: url(../img/close.png);
+}
+.pageNav .header .navBtn{
+    width: .42rem;
+    height: 0.39rem;
+    background: url(../img/menu.png) no-repeat center center;
+    background-size: 100%;
+}
+.pageNav .header .navBtn.current{
+    background-image: url(../img/close.png);
+}
+/***********************************首页导航_一级导航***********************************/
+.firstNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding-top: 1.1rem;
+    box-sizing: border-box;
+    font-size: 0.3rem;
+    transform: translate(0,-150%);
+    transition: transform .4s ease-in-out 0s;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+.firstNav.current{
+    transform: translate(0,0);
+}
+.firstNav>li{
+    padding: 0 .2rem;
+    border-bottom: 1px solid #e2e2e2;
+}
+.firstNav>li:last-child{
+    border-bottom: px solid #fff;
+}
+.firstNav>li>a{
+    display: block;
+    color: #333;
+    line-height: 1.05rem;
+}
+/***********************************首页导航_二级导航***********************************/
+.secondNav{
+    height: 0;
+    font-size: 0.28rem;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+}
+.secondNav>li{
+    padding-left: .4rem;
+    border-bottom: 1px solid #e8e8e8;
+}
+.secondNav>li:last-child{
+    border-bottom: 1px solid #fff;
+}
+.secondNav>li>a{
+    display: block;
+    line-height: 0.85rem;
+    color: #666;
+}
+/***********************************首页导航_三级导航***********************************/
+.thirdNav{
+    height: 0;
+    font-size: 0.24rem;
+    border-top: 1px solid #fff;
+    overflow: hidden;
+}
+.thirdNav>a{
+    float: left;
+    width: 1.37rem;
+    height: .58rem;
+    line-height: 0.58rem;
+    text-align: center;
+    border: 1px solid #999;
+    margin: 0 .2rem .2rem 0;
+    color: #666;
+}
+.firstNav a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.firstNav a.navSelect{
+    background: url(../img/icon_right.png) no-repeat right center;
+    background-size: .11rem .21rem;
+}
+.firstNav a.navSelect.action{
+    background-image: url(../img/icon_down.png);
+    background-size: .21rem .11rem;
+}
+.firstNav>li>a.navSelect.action ~ .secondNav{
+    height: auto;
+    border-color: #d9d9d9;
+}
+.secondNav>li>a.navSelect.action ~ .thirdNav{
+    height: auto;
+    border-color: #efefef;
+    padding: .3rem 0 .1rem;
+}
+/***********************************banner***********************************/
+.paddingTop{
+    padding-top: 1.11rem;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    width: 100%;
+}
+.banner .bannerInner{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translate(0,-50%);
+}
+.banner .bannerInner .text{
+    display: table;
+    height: 100%;
+    padding-left: .3rem;
+}
+.banner .bannerInner .text .box{
+    vertical-align: middle;
+}
+.banner .bannerInner .text .box h3{
+    font-size: .32rem;
+    margin-bottom: 0.15rem;
+}
+.banner .bannerInner .text .box h4{
+    font-weight: 400;
+    font-size: 0.22rem;
+}
+/***********************************banner下导航***********************************/
+.aboutNav{
+    width: 100%;
+    background-color: #f3f3f3;
+}
+.aboutNav .inner{
+    width: 6rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.aboutNav .inner a{
+    font-size: 0.26rem;
+    line-height: 0.85rem;
+    border-bottom: 1px solid #f3f3f3;
+    color: #333333;
+}
+.aboutNav .inner a.action{
+    border-bottom-color: #2d88c4;
+    color: #2d88c4;
+}
+/***********************************面包屑***********************************/
+.breadcrumb{
+    width: 100%;
+    margin: 0 auto;
+    line-height: .64rem;
+    color: #999;
+    border-bottom: 1px solid #eee;
+    font-size: 0.2rem;
+}
+.breadcrumb .inner{
+    padding: 0 .3rem;
+    margin: 0 auto;
+}
+.breadcrumb .inner a{
+    color: #999;
+}
+/***********************************分页条***********************************/
+.pageBar{
+    width: 100%;
+    text-align: center;
+}
+.pageBar ul{
+    display: inline-block;
+}
+.pageBar ul li{
+    display: inline-block;
+    width: .46rem;
+    height: .46rem;
+    vertical-align: middle;
+    border: 1px solid #e5e5e5;
+    line-height: .46rem;
+    text-align: center;
+}
+.pageBar ul li a{
+    display: block;
+    color: #999;
+}
+.pageBar ul li.action{
+    border-color: #D51816;
+}
+.pageBar ul li.action a{
+    color: #D51816;
+}
+/***********************************footer***********************************/
+.footer{
+    background: #2a2a2a;
+    color: #fff;
+    padding-top: .48rem;
+}
+.footer .footerContact{
+    width: 3.8rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    text-align: center;
+    color: #999999;
+}
+.footer .footerContact .img{
+    width: 1.11rem;
+}
+.footer .footerContact .img img{
+    display: block;
+    width: 1.11rem;
+    height: 1.11rem;
+    margin-bottom: 0.1rem;
+}
+.footer .footerContact .img .text{
+    font-size: 0.2rem;
+}
+.footer .footerContact .phone{
+    width: 100%;
+    font-size: 0.26rem;
+    padding-left: .38rem;
+    background: url(../img/phone.png) no-repeat .8rem center;
+    background-size: .28rem;
+    color: #fff;
+    margin: .3rem 0;
+}
+.footer .footerContact .version{
+    font-size: 0.2rem;
+    margin-bottom: 0.3rem;
+}
+.footer .bar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #2d76a2;
+}
+.footer .bar a{
+    font-size: 0.24rem;
+    color: #fff;
+    line-height: 0.8rem;
+    padding-left: .38rem;
+    background: url(../img/phone.png) no-repeat left center;
+    background-size: .28rem;
+}
+.footer .bar a.goHome{
+    background-image: url(../img/home.png);
+}
+.footer .bar a.counsel{
+    background-image: url(../img/msg.png);
+}
+/***********************************返回顶部***********************************/
+.scrollTop{
+    position: fixed;
+    right: .37rem;
+    bottom: 4.79rem;
+    width: 0.59rem;
+    height: 0.59rem;
+    background: url(../img/scrollTop.png) no-repeat center center;
+    background-size: 100%;
+    cursor: pointer;
+}

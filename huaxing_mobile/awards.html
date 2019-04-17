@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>华星介绍-荣誉奖项</title>
+</head>
+<body>
+    <!-- banner部分 -->
+    <div class="banner">
+        <img src="./img/banner_presentation.jpg" alt="">
+        <div class="bannerInner">
+            <div class="text">
+                <div class="box">
+                    <h3>华星艺术教育商学院</h3>
+                    <h4>中国艺术培训行业助力者</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面内导航 -->
+    <div class="aboutNav">
+        <div class="inner">
+            <a href="javascript:;">华星介绍</a>
+            <a href="javascript:;">企业历程</a>
+            <a href="javascript:;" class="action">荣誉奖项</a>
+        </div>
+    </div>
+    <!-- 面包屑导航 -->
+    <div class="breadcrumb">
+        <div class="inner">
+            您的位置：
+            <a href="javascript:void(0);">首页&nbsp;</a>&gt;&nbsp;
+            <a href="javascript:void(0);">关于华星&nbsp;</a>&gt;&nbsp;
+            <span>荣誉奖项</span>
+        </div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="main">
+        <div class="inner awards">
+            <!-- 内容标题 -->
+            <div class="mainTitle">
+                <div class="title">荣誉奖项</div>
+                <div class="Eg">
+                    <span class="lineL"></span>
+                    <span class="text">HONORARY AWARD</span>
+                    <span class="lineR"></span>
+                </div>
+            </div>
+            <div class="mainContent">
+                <!-- 奖项列表的每一项，data-img是弹出框所显示的图片，data-title是弹出框所显示的标题，data-cont是内容 -->
+                <div class="awardItem" data-img="./img/awardsImg1.jpg" data-title="腾讯网教育年度总评榜2014年度影响力教育品牌" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <!-- 列表展示的图片 -->
+                    <div class="itemImg"><img src="./img/awardsImg1.jpg" alt=""></div>
+                    <!-- 列表标题 -->
+                    <div class="itemText">腾讯网教育年度总评榜2014年度影响力教育品牌</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg2.jpg" data-title="中国音乐学院社会艺术水平考级合作基地" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg2.jpg" alt=""></div>
+                    <div class="itemText">中国音乐学院社会艺术水平考级合作基地</div>
+                </div>
+                <div class="awardItem" data-img="./img/awardsImg3.jpg" data-title="新浪教育中国影响力教育机构" data-cont="截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃">
+                    <div class="itemImg"><img src="./img/awardsImg3.jpg" alt=""></div>
+                    <div class="itemText">新浪教育中国影响力教育机构</div>
+                </div>
+            </div>
+            <!-- 分页条 -->
+            <div class="pageBar">
+                <ul>
+                    <li class="prevPage"><a href="javascript:void(0);">&lt;</a></li>
+                    <li class="action"><a href="javascript:void(0);">1</a></li>
+                    <li class=""><a href="javascript:void(0);">2</a></li>
+                    <li class=""><a href="javascript:void(0);">3</a></li>
+                    <li class=""><a href="javascript:void(0);">4</a></li>
+                    <li class=""><a href="javascript:void(0);">5</a></li>
+                    <li class="nextPage"><a href="javascript:void(0);">&gt;</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 奖项列表的弹出框 -->
+    <div class="awardPopUp">
+        <div class="popBg"></div>
+        <div class="popCont">
+            <div class="closePop"></div>
+            <div class="popImg"><img src="./img/awardsImg11.jpg" alt=""></div>
+            <div class="popTitle">2015年亚洲教育论坛 亚洲教育影响力奖</div>
+            <div class="popText">截止到2019年1月，华星已经在全国30多个省份举办201场培训会议，培训21000余家艺培机构，成功帮助百余家中小型艺术培训机构从百余学生发展至万人大校，帮助数百余家机构营收突破千万，帮助艺培机构的发展实现了质的飞跃</div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script>
+        //计算奖项中间项的margin
+        for(var i = 0; i < $(".awards .awardItem").length; i++){
+            console.log(2 * (parseInt(i / 3) + 1) + parseInt(i / 3))
+            $(".awards .awardItem").eq(2 * (parseInt(i / 3) + 1) + parseInt(i / 3) - 1 ).css({
+                "marginLeft": 22,
+                "marginRight":22
+            });
+        }
+        //点击每一个奖项的弹框
+        $(".awards").on("click",".awardItem .itemDetail",function(){
+            $(".awardPopUp").show();
+            var imgUrl = $(this).parents(".awardItem").attr("data-img");
+            var title = $(this).parents(".awardItem").attr("data-title");
+            var text = $(this).parents(".awardItem").attr("data-cont");
+            $(".awardPopUp .popCont .popImg img").attr("src",imgUrl);
+            $(".awardPopUp .popCont .popTitle").html(title);
+            $(".awardPopUp .popCont .popText").html(text);
+            $(".awardPopUp .popCont").css("marginTop", -$(".awardPopUp .popCont").outerHeight() / 2);
+        });
+        $(".awardPopUp .popBg,.awardPopUp .closePop").on("click",function(){
+            $(".awardPopUp").hide();
+        });
+    </script>
+</body>
+</html>
