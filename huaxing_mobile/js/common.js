@@ -1,7 +1,7 @@
-$("html").css("fontSize",$(window).width() * 0.13333333333333333);
-$(window).on("resize",function(){
-    $("html").css("fontSize",$(window).width() * 0.13333333333333333);
-});
+// $("html").css("fontSize",$(window).width() * 0.13333333333333333);
+// $(window).on("resize",function(){
+//     $("html").css("fontSize",$(window).width() * 0.13333333333333333);
+// });
 
 // 导航条控制
 $(".pageNav .firstNav li a").on("click",function(){
