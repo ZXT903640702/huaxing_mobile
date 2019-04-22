@@ -1,0 +1,34 @@
+.date_bg{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.date_box{
+    width: 4.22rem;
+    position: relative;
+    margin: 70% auto 0 auto;
+    background-color: #fff;
+    padding: 0.2rem 0.4rem;
+    box-sizing: border-box;
+}
+.date_box .date_item{
+    margin-top: 0.3rem;
+}
+.date_box .date_item p{
+    font-size: 0.22rem;
+    padding-bottom: 0.2rem;
+}
+.del_imgs{
+    position: absolute;
+    bottom:-0.7rem;
+    left:0;
+    right:0;
+    width: 0.5rem;
+    height: 0.5rem;
+    margin: 0 auto;
+}

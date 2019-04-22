@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/timer.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/myCss.css">
     <title>华星教育-首页</title>
 </head>
 <body>
@@ -128,6 +129,12 @@
     </div>
 </div>
 
+<!--公开课详情弹框-->
+<div class="date_bg">
+    <div class="date_box">
+        <img class="del_imgs" src="img/date_del.png" alt="">
+    </div>
+</div>
 <!-- 底部 -->
 <div class="footer">
     <div class="footerContact">
@@ -186,14 +193,11 @@
                 $calendarItem.css("visibility", "visible");
             });
             $(".dayItem").css("width", $("#context").width() + "px");
-            var itemPaddintTop = $(".dayItem").height() / 6;
             $(".item").css({
-                "width": $(".week").width() / 7 + "px",
-                // "line-height": itemPaddintTop + "px",
-                "height": itemPaddintTop + "px"
+                "width": '14.285%'
             });
             // $(".currentItem>a").css("margin-left", ($(".item").width() - 25) / 2 + "px").css("margin-top", ($(".item").height() - 25) / 2 + "px");
-            $(".week>h3").css("width", $(".week").width() / 7 + "px");
+            $(".week>h3").css("width", '14.285%');
             this.RunningTime();
         },
         CreateSelectYear: function(showYearStart) {
@@ -408,11 +412,11 @@
         CSS: function() {
             var itemPaddintTop = $(".dayItem").height() / 6;
             $(".item").css({
-                "width": $(".week").width() / 7 + "px",
+                "width": ($(".week").width() / 7).toFixed(1) + "px",
                 "line-height": itemPaddintTop + "px",
                 "height": itemPaddintTop + "px"
             });
-            $(".currentItem>a").css("margin-left", ($(".item").width() - 25) / 2 + "px").css("margin-top", ($(".item").height() - 25) / 2 + "px");
+            // $(".currentItem>a").css("margin-left", ($(".item").width() - 25) / 2 + "px").css("margin-top", ($(".item").height() - 25) / 2 + "px");
         },
         CalculateNextMonthDays: function() {
             if (this.isRunning == false) {
@@ -564,27 +568,35 @@
                 // var s =timeData[i].state;
 
                 if(times>=stime && times<etime){
-                    console.log(times,stime,etime);
-                    if($(items[j]).siblings('.alert_box').length==0){
-                        $(items[j]).parent().append(alert_box);
-                    }
+                    // if($(items[j]).siblings('.alert_box').length==0){
+                    //     $(items[j]).parent().append(alert_box);
+                    // }
                     var suc_div = $("<div class='suc_d txt-num1'>"+name+"</div>");
-                    var indev = $("<div class='indiv'>" +
-                        "<p class='txt-num1'>主&nbsp;&nbsp;题："+timeData[i].name+"</p>" +
+                    var indev = $("<div class='date_item' style='display: none;'>" +
+                        "<p class='txt-num1'>主&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;题："+timeData[i].name+"</p>" +
                         "<p>开课时间："+timeData[i].time+"</p>" +
-                        "<p>地&nbsp;&nbsp;点："+timeData[i].address+"</p>" +
+                        "<p>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;点："+timeData[i].address+"</p>" +
                         "</div>");
-                    $(items[j]).siblings('.alert_box').append(indev);
+
+
+                    $(items[j]).parent().append(indev);
                     $(items[j]).siblings('.add_box').append(suc_div);
-                    $(items[j]).siblings('a').addClass('dataShow');
+                    // $(items[j]).siblings('a').addClass('dataShow');
                 }
             }
         }
         //点击每天获取挑战记录
-        $(".dayItem .item").hover(function(){
-            $(this).find(".alert_box").show();
-        },function(){
-            $(this).find(".alert_box").hide();
+        $(".dayItem .item").click(function(){
+            if($(this).find('.date_item').length != 0){
+                var item = $(this).find('.date_item').clone();
+                $('.date_bg .date_box').append(item);
+                $('.date_bg').show();
+                $('.date_bg .date_box .date_item').show();
+            }
+        });
+        $('.del_imgs').click(function(){
+            $('.date_bg .date_box .date_item').remove();
+            $('.date_bg').hide();
         });
     }
 </script>

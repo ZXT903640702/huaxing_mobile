@@ -304,8 +304,8 @@ body{
 /***********************************返回顶部***********************************/
 .scrollTop{
     position: fixed;
-    right: .37rem;
-    bottom: 4.79rem;
+    right: 0.2rem;
+    bottom: 1rem;
     width: 0.59rem;
     height: 0.59rem;
     background: url(../img/scrollTop.png) no-repeat center center;

@@ -521,22 +521,22 @@ body{
 
 #CalendarMain {
 	width: 100%;
-	height: 600px;
+	height: 7.5rem;
 	margin: 0 auto;
-	margin-top: 30px;
+	margin-top: 0.3rem;
 }
 #title {
 	width: 100%;
-	height: 35px;
+	height: 0.6rem;
 	background-color: #f8f8f8;
 }
 .selectBtn {
 	font-weight: 900;
-	/*font-size: 0.8rem;*/
+	font-size: 0.24rem;
 	color: #666;
 	cursor: pointer;
 	text-decoration: none;
-	padding: 8px 10px;
+	padding: 0.12rem 0.15rem;
 }
 .selectBtn:hover {
 	background-color: #1a85ca;
@@ -544,20 +544,22 @@ body{
 }
 .selectYear {
 	float: left;
-	margin-left: 50px;
+	margin-left: 1rem;
 	position: absolute;
 }
 .selectMonth {
 	float: left;
-	margin-left: 120px;
+	margin-left: 2.5rem;
 	position: absolute;
 }
 .month {
 	float: left;
+	margin-left: 0.2rem;
 	position: absolute;
 }
 .nextMonth {
 	float: right;
+	margin-right: 0.2rem;
 }
 .currentDay {
 	float: right;
@@ -568,7 +570,7 @@ body{
 }
 .week {
 	width: 100%;
-	height: 30px;
+	height: 0.5rem;
 	margin-top: 5px;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -579,8 +581,8 @@ body{
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	margin-top: 5px;
-	/*font-size: 0.8rem;*/
+	line-height: 0.5rem;
+	font-size: 0.22rem;
 }
 .dayItem {
 	float: left;
@@ -599,6 +601,7 @@ body{
 	text-align: center;
 	cursor: pointer;
 	margin: 0;
+	height: 1rem !important;
 	font-family: "微软雅黑";
 	font-size: 13px;
 	position: relative;
@@ -611,12 +614,13 @@ body{
 }
 .item a{
 	position: absolute;
-	top:10px;
-	right:10px;
-	width: 20px;
-	height: 20px;
+	top:0.1rem;
+	right:0.1rem;
+	width: 0.26rem;
+	height: 0.26rem;
 	display: block;
-	line-height: 20px;
+	line-height: 0.26rem;
+	font-size: 0.18rem;
 }
 .dataShow{
 	margin: 0 !important;
@@ -651,7 +655,7 @@ body{
 #Container {
 	/*overflow: hidden;*/
 	float: left;
-	height: 500px !important;
+	/*height: 500px !important;*/
 }
 #center {
 	width: 100%;
@@ -669,7 +673,7 @@ body{
 #selectYearDiv>div {
 	float: left;
 	text-align: center;
-	font-size: 16px;
+	font-size: 0.24rem;
 	border: 1px solid #ccc;
 	margin-left: -1px;
 	margin-top: -1px;
@@ -688,7 +692,7 @@ body{
 	color: #909090;
 	float: left;
 	text-align: center;
-	/*font-size: 0.9rem;*/
+	font-size: 0.24rem;
 	border: 1px solid #ccc;
 	margin-left: -1px;
 	margin-top: -1px;
@@ -971,16 +975,17 @@ body{
 	bottom:0;
 	left:0;
 	width: 100%;
-	height: 50px;
+	height: 0.6rem;
 }
 .suc_d{
-	margin: 0 auto;
+	margin: 0.05rem auto 0 auto;
 	width: 100%;
-	height: 24px;
-	padding: 0 6px;
-	line-height: 24px;
+	height: 0.24rem;
+	padding: 0 0.06rem;
+	line-height: 0.24rem;
 	text-align: center;
 	color:#1a85ca;
+	font-size: 0.18rem;
 	box-sizing: border-box;
 }
 .alert_box{
