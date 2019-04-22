@@ -149,7 +149,8 @@ body{
 }
 .banner{
     position: relative;
-    width: 100%;
+    width: 7.5rem;
+    margin: 0 auto;
     overflow: hidden;
 }
 .banner img{
@@ -174,13 +175,21 @@ body{
     font-size: .32rem;
     margin-bottom: 0.15rem;
 }
+.banner .bannerInner .text .box .line{
+    display: block;
+    width: .46rem;
+    height: 2px;
+    margin-bottom: 0.15rem;
+    background-color: #2f88c1;
+}
 .banner .bannerInner .text .box h4{
     font-weight: 400;
     font-size: 0.22rem;
 }
 /***********************************banner下导航***********************************/
 .aboutNav{
-    width: 100%;
+    width: 7.5rem;
+    margin: 0 auto;
     background-color: #f3f3f3;
 }
 .aboutNav .inner{
@@ -202,7 +211,7 @@ body{
 }
 /***********************************面包屑***********************************/
 .breadcrumb{
-    width: 100%;
+    width: 7.5rem;
     margin: 0 auto;
     line-height: .64rem;
     color: #999;
@@ -227,7 +236,8 @@ body{
 }
 /***********************************分页条***********************************/
 .pageBar{
-    width: 100%;
+    width: 7.5rem;
+    margin: 0 auto;
     text-align: center;
 }
 .pageBar ul{
