@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/hotcss.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mCalendar.css">
+    <link rel="stylesheet" href="css/myCss.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>客户见证</title>
+</head>
+<body>
+<div class="banner"><img width="100%" src="img/jz_banner.png" alt=""></div>
+<!-- 面包屑导航 -->
+<div class="breadcrumb">
+    <div class="inner">
+        您的位置：<a href="javascript:void(0);">首页&nbsp;</a>&gt;&nbsp;<span>客户见证</span>
+    </div>
+</div>
+<!-- 内容部分 -->
+<div class="main">
+    <div class="kh_list">
+        <form action="" class="shai_xuan clearfix">
+            <p class="float_lf">筛选：</p>
+            <div class="float_lf clearfix">
+                <span>地区</span>
+                <div class="select_div float_lf">
+                    <p>选择地区</p>
+                    <ul style="display: none;">
+                        <li name="1"><a href="#">浙江</a></li>
+                        <li name="2"><a href="#">浙江</a></li>
+                        <li name="3"><a href="#">西藏</a></li>
+                        <li name="4"><a href="#">北京</a></li>
+                    </ul>
+                    <input type="hidden" name="" value="">
+                </div>
+            </div>
+            <div class="float_lf clearfix">
+                <span>时间</span>
+                <input type="text" placeholder="请选择日期" id="input2" readonly="readonly">
+            </div>
+            <div class="float_lf clearfix" style="margin-right: 0;">
+                <span>类型</span>
+                <div class="select_div float_lf">
+                    <p>选择类型</p>
+                    <ul style="display: none;">
+                        <li name="1"><a href="#">浙江</a></li>
+                        <li name="2"><a href="#">浙江</a></li>
+                        <li name="3"><a href="#">西藏</a></li>
+                        <li name="4"><a href="#">北京</a></li>
+                    </ul>
+                    <input type="hidden" name="" value="">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="list_box kh_main">
+        <a href="#" class="clearfix">
+            <img class="float_lf" src="img/list_img.png" alt="">
+            <div class="float_rt list_main">
+                <div class="txt-num1">公司成立，与国内多家艺术院...</div>
+                <div class="txt-num2">2018年10月19日至10月21日，华星艺术教育商学院前往浙江虹桥蕾丝...</div>
+                <div class="clearfix">
+                    <p class="clearfix"><img src="img/dingwei.png" alt=""><span>浙江</span></p>
+                    <p class="clearfix">查看详情</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="clearfix">
+            <img class="float_lf" src="img/list_img2.png" alt="">
+            <div class="float_rt list_main">
+                <div class="txt-num1">公司成立，与国内多家艺术院...</div>
+                <div class="txt-num2">2018年10月19日至10月21日，华星艺术教育商学院前往浙江虹桥蕾丝...</div>
+                <div class="clearfix">
+                    <p class="clearfix"><img src="img/dingwei.png" alt=""><span>浙江</span></p>
+                    <p class="clearfix">查看详情</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="clearfix">
+            <img class="float_lf" src="img/list_img.png" alt="">
+            <div class="float_rt list_main">
+                <div class="txt-num1">公司成立，与国内多家艺术院...</div>
+                <div class="txt-num2">2018年10月19日至10月21日，华星艺术教育商学院前往浙江虹桥蕾丝...</div>
+                <div class="clearfix">
+                    <p class="clearfix"><img src="img/dingwei.png" alt=""><span>浙江</span></p>
+                    <p class="clearfix">查看详情</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="page_box">
+        <ul class="page_ul clearfix">
+            <li><a href="#"><</a></li>
+            <li class="act_a"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">></a></li>
+        </ul>
+    </div>
+</div>
+
+
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="js/mCalendar-3.0.min.js"></script>
+<script>
+    var input2=document.getElementById('input2');
+    var calendar2=new mCalendar({
+        'toBind':input2,
+        'callback':function(){
+            input2.setAttribute('value',this.outputDate);
+        }
+    });
+
+//    仿下拉框
+    $('.select_div p').click(function(){
+        $('.select_div ul').hide();
+        $(this).siblings('ul').show();
+    });
+
+    $('.select_div ul li').click(function(){
+        var val = $(this).text();
+        var ids = $(this).attr('name');
+        $(this).parent().siblings('p').text(val);
+        $(this).parent().siblings('input').val(ids);
+        $(this).parent().hide();
+    });
+    //点击空白下拉框消失
+    $(document).click(function(e) {
+        var _con = $('.select_div'); // 设置目标区域
+        if(!_con.is(e.target) && _con.has(e.target).length === 0) {
+            $('.select_div ul').hide();
+        }
+    });
+</script>
+</body>
+</html>
