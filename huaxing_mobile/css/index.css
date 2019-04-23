@@ -890,15 +890,458 @@
 }
 
 /* 创始人 */
+.main.origin .inner{
+    padding-bottom: .45rem;
+}
 .main .originator{
     width: 100%;
 }
 .main .originator .originatorImg{
     width: 6.9rem;
     height: 8.33rem;
+    margin-bottom: 0.9rem;
 }
 .main .originator .originatorImg img{
     display: block;
     width: 100%;
     height: 100%;
+}
+.main .originator .originatorText{
+    width: 100%;
+}
+.main .originator .originatorText .title{
+    display: block;
+    max-height: 100%;
+    font-size: 0.6rem;
+    font-family: "SimSun";
+    font-weight: 700;
+    color: #333;
+}
+.main .originator .originatorText .Eg{
+    display: block;
+    max-height: 100%;
+    font-size: 0.26rem;
+    color: #2d88c4;
+    line-height: 0.82rem;
+}
+.main .originator .originatorText .text{
+    display: block;
+    max-height: 100%;
+    font-size: 0.28rem;
+    color: #333;
+    margin-bottom: 0.55rem;
+}
+.main .originator .originatorText .content{
+    display: block;
+    max-height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    text-indent: 2em;
+    color: #333;
+}
+.main .originator .originatorText .img img{
+    float: right;
+    width: 1.43rem;
+    height: 0.73rem;
+    margin-top: 0.25rem;
+}
+
+/* 分院负责人 */
+.main.principal .inner{
+    padding-bottom: .7rem;
+}
+.main.principal .mainContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+}
+.main.principal .mainContent .principalItem{
+    width: 3.35rem;
+    margin-bottom: 0.2rem;
+}
+.main.principal .mainContent .principalItem .itemImg{
+    width: 100%;
+    text-align: center;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: .25rem .5rem 0 .8rem;
+}
+.main.principal .mainContent .principalItem .itemImg img{
+    display: inline-block;
+    height: 3.76rem;
+    max-width: 100%;
+}
+.main.principal .mainContent .principalItem .itemText{
+    display: block;
+    width: 100%;
+    background: url(../img/yjt.png) no-repeat 95% center;
+    background-size: .24rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 0.68rem;
+    border: 1px solid #e5e5e5;
+    border-top-width: 0;
+    padding: 0 .4rem 0 .1rem;
+    box-sizing: border-box;
+}
+.main.principal .mainContent .principalItem .itemText .name{
+    font-size: 0.26rem;
+    margin-right: .2rem;
+}
+.main.principal .mainContent .principalItem .itemText .city{
+    font-size: 0.22rem;
+}
+
+/* 分公司负责人详情 */
+.main.principalDetail .inner{
+    padding-top: .41rem;
+    padding-bottom: .79rem;
+}
+.main.principalDetail .mainContent .detailHeader{
+    width: 100%;
+    margin-bottom: 0.4rem;
+    overflow: hidden;
+}
+.main.principalDetail .mainContent .detailHeader .headerImg{
+    float: left;
+    margin-right: .41rem;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    padding: .25rem .5rem 0 .8rem;
+    text-align: center;
+}
+.main.principalDetail .mainContent .detailHeader .headerImg img{
+    display: inline-block;
+    height: 3.76rem;
+    max-width: 100%;
+}
+.main.principalDetail .mainContent .detailHeader .headerText{
+    float: left;
+    padding-top: 0.6rem;
+}
+.main.principalDetail .mainContent .detailHeader .headerText .name{
+    font-size: 0.28rem;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+.main.principalDetail .mainContent .detailHeader .headerText .content{
+    font-size: 0.22rem;
+    line-height: 0.36rem;
+    color: #333;
+}
+.main.principalDetail .mainContent .detailCont{
+    margin-bottom: 0.31rem;
+}
+.main.principalDetail .mainContent .detailCont .contTitle{
+    display: inline-block;
+    padding: 0 .23rem;
+    background-color: #2d88c4;
+    color: #fff;
+    line-height: 0.46rem;
+    text-align: center;
+    font-size: 0.24rem;
+    border-radius: .05rem;
+    margin-bottom: 0.19rem;
+}
+.main.principalDetail .mainContent .detailCont .contText{
+    display: block;
+    max-height: 100%;
+    width: 100%;
+    line-height: 0.36rem;
+    font-size: 0.24rem;
+    color: #333;
+}
+
+/* 分支机构 */
+.main.embranchment .inner{
+    padding-top: .3rem;
+    padding-bottom: .56rem;
+}
+.main.embranchment .mainContent .filter{
+}
+.main.embranchment .mainContent .embranchmentList{
+}
+.main.embranchment .mainContent .embranchmentList .listItem{
+    position: relative;
+    padding: .3rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .itemLeft{
+    margin-right: .2rem;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .itemLeft img{
+    display: block;
+    width: 2.8rem;
+    height: 1.87rem;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .itemRight{
+    max-width: 3.94rem;
+    padding-right: .3rem;
+    padding-top: .1rem;
+    box-sizing: border-box;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .itemRight .title{
+    display: block;
+    max-height: 100%;
+    font-weight: 400;
+    font-size: .28rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.31rem;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .itemRight .text{
+    display: block;
+    max-height: 100%;
+    color: #666;
+    line-height: .32rem;
+    font-size: 0.22rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .link{
+    position: absolute;
+    bottom: .3rem;
+    right: 0;
+}
+.main.embranchment .mainContent .embranchmentList .listItem .link span{
+    display: block;
+    max-height: 100%;
+    width: 1.3rem;
+    height: .42rem;
+    line-height: .42rem;
+    text-align: center;
+    background: #fff;
+    background-color: #D51717;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 0.22rem;
+}
+
+/* 分支机构详情 */
+.main.embranchmentDetail .inner{
+    padding-top: .5rem;
+    padding-bottom: .35rem;
+}
+.embranchmentDetail .branch{
+    margin-bottom: 0.74rem;
+}
+.embranchmentDetail .branch .branchLeft{
+    margin-top: .19rem;
+}
+.embranchmentDetail .branch .branchLeft img{
+    width: 6.87rem;
+    height: 4.58rem;
+}
+.embranchmentDetail .branch .branchRight{
+}
+.embranchmentDetail .branch .branchRight .title{
+    display: block;
+    max-height: 100%;
+    font-size: .28rem;
+    color: #333333;
+    margin-bottom: 0.31rem;
+}
+.embranchmentDetail .branch .branchRight .text{
+    display: block;
+    max-height: 100%;
+    color: #666;
+    text-indent: 2em;
+    line-height: .36rem;
+    font-size: 0.22rem;
+}
+.embranchmentDetail .team{
+    position: relative;
+    margin-bottom: .9rem;
+}
+.embranchmentDetail .team .title,.embranchmentDetail .contact .title{
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: .4rem;
+    line-height: .42rem;
+}
+.embranchmentDetail .team .title .bg,.embranchmentDetail .contact .title .bg{
+    display: inline-block;
+    background: url(../img/embranchmentBg.png) no-repeat left center;
+    background-size: 100%;
+    padding: 0 .26rem;
+}
+.embranchmentDetail .team .title .CN,.embranchmentDetail .contact .title .CN{
+    display: inline-block;
+    font-size: .26rem;
+    color: #333333;
+}
+.embranchmentDetail .team .title .Eg,.embranchmentDetail .contact .title .Eg{
+    display: inline-block;
+    font-size: .22rem;
+    color: #666;
+}
+.embranchmentDetail .team .teamDetail{
+    padding: 0 .53rem;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+.embranchmentDetail .team .slideImg{
+    padding-top: .1rem;
+    background: #f3f3f3;
+}
+.embranchmentDetail .team .slideImg img{
+    max-width: 100%;
+    height: 3.04rem;
+    display: block;
+    margin: 0 auto;
+}
+.embranchmentDetail .team .slideText{
+    padding: .2rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.embranchmentDetail .team .slideText .name{
+    font-size: .24rem;
+    font-weight: 700;
+    color: #333333;
+}
+.embranchmentDetail .team .slideText .city{
+    font-size: .2rem;
+    color: #333333;
+}
+.embranchmentDetail .team .tools{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+.embranchmentDetail .team .tools .prevBtn{
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: .44rem;
+    height: .44rem;
+    background: url(../img/icon-left.png) no-repeat center center #e5e5e5;
+    background-size: .1rem .2rem;
+    border-radius: 50%;
+}
+.embranchmentDetail .team .tools .nextBtn{
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: .44rem;
+    height: .44rem;
+    background: url(../img/icon-right.png) no-repeat center center #e5e5e5;
+    background-size: .1rem .2rem;
+    border-radius: 50%;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft{
+    padding-top: .2rem;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft p{
+    display: block;
+    max-height: 100%;
+    font-size: .24rem;
+    padding-left: .3rem;
+    margin-bottom: 0.22rem;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft p.leftTitle{
+    font-size: .28rem;
+    background: url(../img/mapPoint.png) no-repeat left center;
+    background-size: .19rem .24rem;
+    margin-bottom: .42rem;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft p.address{
+    margin-bottom: .51rem;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft p.route{
+    background: url(../img/bus.png) no-repeat .3rem center;
+    background-size: .25rem;
+    padding-left: .7rem;
+    color: #1984C8;
+    margin-bottom: 0.54rem;
+}
+.embranchmentDetail .contact .contactDetail .contactLeft p .bold{
+    font-weight: 700;
+}
+.embranchmentDetail .contact .contactDetail .contactRight{
+}
+
+/* 商学 */
+.main.productService .inner{
+    padding-top: .5rem;
+    padding-bottom: .1rem;
+}
+.main.productService .mainContent .businessStudiesTitle{
+    text-indent: 2em;
+    font-size: 0.24rem;
+    line-height: .42rem;
+    margin-bottom: .3rem;
+}
+.main.productService .mainContent .studiesDetail{
+    border-top: 1px solid #e5e5e5;
+}
+.main.productService .mainContent .studiesDetail .item{
+    position: relative;
+    padding: .3rem 0;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+}
+.main.productService .mainContent .studiesDetail .item .itemImg{
+    margin-right: .2rem;
+}
+.main.productService .mainContent .studiesDetail .item .itemImg img{
+    display: block;
+    width: 2.8rem;
+    height: 1.87rem;
+}
+.main.productService .mainContent .studiesDetail .item .content{
+    max-width: 3.94rem;
+    padding-top: .1rem;
+    box-sizing: border-box;
+}
+.main.productService .mainContent .studiesDetail .item .content .title{
+    display: block;
+    max-height: 100%;
+    font-weight: 400;
+    font-size: .26rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 0.2rem;
+}
+.main.productService .mainContent .studiesDetail .item .content .text{
+    display: block;
+    max-height: 100%;
+    color: #666;
+    line-height: .3rem;
+    font-size: 0.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.main.productService .mainContent .studiesDetail .item .link{
+    position: absolute;
+    bottom: .3rem;
+    right: 0;
+}
+.main.productService .mainContent .studiesDetail .item .link span{
+    display: block;
+    max-height: 100%;
+    width: 1.2rem;
+    height: .42rem;
+    line-height: .42rem;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #D51717;
+    color: #D51717;
+    border-radius: 2rem;
+    font-size: 0.2rem;
+}
+.main.productService .mainContent .studiesDetail .item:last-child{
+    border-bottom: 0px solid #e5e5e5;
 }
