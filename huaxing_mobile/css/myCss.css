@@ -1,14 +1,15 @@
-.date_bg{
+.date_bg {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     display: none;
 }
-.date_box{
+
+.date_box {
     width: 4.22rem;
     position: relative;
     margin: 70% auto 0 auto;
@@ -16,167 +17,421 @@
     padding: 0.2rem 0.4rem;
     box-sizing: border-box;
 }
-.date_box .date_item{
+
+.date_box .date_item {
     margin-top: 0.3rem;
 }
-.date_box .date_item p{
+
+.date_box .date_item p {
     font-size: 0.22rem;
     padding-bottom: 0.2rem;
 }
-.del_imgs{
+
+.del_imgs {
     position: absolute;
-    bottom:-0.7rem;
-    left:0;
-    right:0;
+    bottom: -0.7rem;
+    left: 0;
+    right: 0;
     width: 0.5rem;
     height: 0.5rem;
     margin: 0 auto;
 }
 
 /*加入华星-详情*/
-.job_top{
+.job_top {
     padding: 0.3rem;
     width: 100%;
     box-sizing: border-box;
 }
-.job_top .job_name{
+
+.job_top .job_name {
     margin-bottom: 0.4rem;
 }
-.job_top .job_name p{
+
+.job_top .job_name p {
     float: left;
 }
-.job_top .job_name p:first-child{
+
+.job_top .job_name p:first-child {
     font-size: 0.24rem;
     padding: 0 0.1rem;
     line-height: 0.24rem;
     border-left: 2px solid #1a85ca;
 }
-.job_top .job_name p:first-child+p{
+
+.job_top .job_name p:first-child + p {
     color: #999999;
     float: right;
     font-size: 0.18rem;
 }
-.job_top .job_tj{
+
+.job_top .job_tj {
     padding-left: 0.1rem;
     padding-bottom: 0.15rem;
     box-sizing: border-box;
     border-bottom: 1px solid #e5e5e5;
 }
-.job_top .job_tj p{
+
+.job_top .job_tj p {
     float: left;
     font-size: 0.22rem;
 }
-.job_top .job_tj p:first-child+p{
+
+.job_top .job_tj p:first-child + p {
     margin-left: 1.08rem;
 }
-.job_top .job_tj p:first-child+p+p{
+
+.job_top .job_tj p:first-child + p + p {
     float: right;
 }
-.job_info{
+
+.job_info {
     padding: 0.3rem;
     box-sizing: border-box;
 }
-.job_info .info_item{
+
+.job_info .info_item {
     margin-bottom: 0.3rem;
 }
-.job_info .info_item>p{
+
+.job_info .info_item > p {
     font-size: 0.24rem;
     margin-bottom: 0.1rem;
 }
-.job_info .info_item div p{
+
+.job_info .info_item div p {
     font-size: 0.22rem;
     margin-bottom: 0.1rem;
     line-height: 0.34rem;
 }
-.job_info .info_item div p span{
+
+.job_info .info_item div p span {
     display: inline-block;
     float: left;
 }
-.job_info .info_item div p span:first-child{
+
+.job_info .info_item div p span:first-child {
     width: 5%;
 }
-.job_info .info_item div p span:first-child+span{
+
+.job_info .info_item div p span:first-child + span {
     width: 95%;
 }
-.job_table{
+
+.job_table {
     padding: 0.3rem;
     min-height: 7rem;
     box-sizing: border-box;
 }
-.job_table table{
+
+.job_table table {
     width: 100%;
-    border-collapse:separate;
-    border-spacing:0 0.1rem;
+    border-collapse: separate;
+    border-spacing: 0 0.1rem;
 }
-.job_table table tr th{
-    color:#fff;
+
+.job_table table tr th {
+    color: #fff;
     text-align: center;
     font-size: 0.22rem;
     line-height: 0.7rem;
     background-color: #2d88c4;
 }
-.job_table table tr td{
+
+.job_table table tr td {
     text-align: center;
     font-size: 0.22rem;
     line-height: 0.7rem;
     background-color: #f8f8f8;
 }
-.job_table table tr td:first-child{
+
+.job_table table tr td:first-child {
     font-weight: bold;
 }
-.job_table table tr td a{
+
+.job_table table tr td a {
     display: inline-block;
     width: 1.2rem;
     height: 0.42rem;
-    color:#d10e20;
+    color: #d10e20;
     text-align: center;
     line-height: 0.42rem;
     border-radius: 0.21rem;
-    border:1px solid #d10e20;
+    border: 1px solid #d10e20;
 }
-.page_box{
+
+.page_box {
     text-align: center;
+    padding: 0.6rem 0;
 }
-.page_ul{
+
+.page_ul {
     display: inline-block;
 }
-.page_ul li{
+
+.page_ul li {
     margin: 0 0.05rem;
     float: left;
 }
-.page_ul li a{
+
+.page_ul li a {
     display: block;
     width: 0.46rem;
     height: 0.46rem;
     line-height: 0.46rem;
     text-align: center;
+    border: 1px solid #e5e5e5;
+    color: #999;
+    font-size: 0.22rem;
+}
+
+.page_ul li a:hover, .act_a a {
+    color: #d10e20 !important;
+    border: 1px solid #d10e20 !important;
+}
+
+.tab_ul {
+    text-align: center;
+    background-color: #f3f3f3;
+}
+
+.tab_ul li {
+    display: inline-block;
+    margin: 0 0.4rem;
+}
+
+.tab_ul li a {
+    display: inline-block;
+    line-height: 0.85rem;
+    font-size: 0.26rem;
+    padding: 0 0.3rem;
+}
+
+.tab_act a {
+    color: #1a85ca !important;
+    box-sizing: border-box;
+    border-bottom: 2px solid #1a85ca !important;
+}
+
+.list_box {
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+}
+
+.list_box a {
+    display: block;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list_box a > img {
+    width: 2.8rem;
+    height: 1.86rem;
+}
+
+.list_box a .list_main {
+    width: 3.9rem;
+    padding: 0.1rem 0;
+}
+
+.list_box a .list_main div:first-child {
+    font-size: 0.28rem;
+    margin-bottom: 0.2rem;
+}
+
+.list_box a .list_main div:first-child + div {
+    font-size: 0.22rem;
+    color: #666;
+    margin-bottom: 0.2rem;
+}
+
+.list_box a .list_main div:first-child + div + div p {
+    float: left;
+    color: #666;
+    font-size: 0.18rem;
+    margin-right: 0.24rem;
+}
+
+.list_box a .list_main div:first-child + div + div p img,
+.list_box a .list_main div:first-child + div + div p span {
+    float: left;
+    display: block;
+}
+
+.list_box a .list_main div:first-child + div + div p img {
+    width: 0.19rem;
+    height: 0.19rem;
+    margin: 0.03rem 0.05rem 0 0;
+}
+
+.list_box a .list_main div:first-child + div + div p:first-child + p {
+    color: #999999;
+}
+
+.details_box {
+    padding: 0 0.3rem;
+    box-sizing: border-box;
+}
+
+.details_box .list_title {
+    padding: 0.52rem 0.2rem 0.2rem 0.2rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.details_box .list_title > p {
+    font-size: 0.26rem;
+    margin-bottom: 0.3rem;
+}
+
+.details_box .list_title div {
+    display: inline-block;
+}
+
+.details_box .list_title div p {
+    float: left;
+    color: #666;
+    font-size: 0.18rem;
+    margin: 0 0.3rem;
+}
+
+.details_box .list_title div p img,
+.details_box .list_title div p span {
+    float: left;
+}
+
+.details_box .list_title div p img {
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0.02rem 0.05rem;
+}
+
+.details_box .list_title div p:first-child + p {
+    color: #999;
+}
+
+.list_details_main {
+    padding: 0.2rem 0 0.5rem 0;
+    border-bottom: 2px dashed #ccc;
+}
+
+.list_details_main p {
+    float: left;
+    color: #666;
+    width: 100%;
+    display: block;
+    font-size: 0.22rem;
+    padding: 0.2rem 0 0 0;
+    text-indent: 2em;
+    line-height: 0.36rem;
+    max-height: 100%;
+}
+
+.list_details_main img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.share_box .bdsharebuttonbox {
+    font-size: 0.22rem;
+    margin: 0.3rem 0;
+    width: 5.9rem;
+}
+
+.share_box .bdsharebuttonbox .baidushare {
+    margin: 0.05rem 0 0 0.1rem;
+}
+
+.bdsharebuttonbox a {
+    width: 0.3rem !important;
+    height: 0.3rem !important;
+    margin: 0 !important;
+    float: none !important;
+    padding: 0 !important;
+    display: block;
     border:1px solid #e5e5e5;
+}
+
+.bdsharebuttonbox a img {
+    width: 0.3rem;
+    height: 0.3rem;
+}
+
+.bdsharebuttonbox .bds_tsina {
+    background: url(../img/gbRes_6.png) no-repeat;
+}
+
+.bdsharebuttonbox .bds_qzone {
+    background: url(../img/gbRes_4.png) no-repeat;
+}
+
+.bdsharebuttonbox .bds_tqq {
+    background: url(../img/gbRes_5.png) no-repeat;
+}
+
+.bdsharebuttonbox .bds_weixin {
+    background: url(../img/gbRes_2.png) no-repeat;
+}
+
+.bdsharebuttonbox .bds_sqq {
+    background: url(../img/gbRes_3.png) no-repeat;
+}
+
+.bdsharebuttonbox .bds_renren {
+    background: url(../img/gbRes_1.png) no-repeat;
+}
+
+.bd_weixin_popup .bd_weixin_popup_foot {
+    position: relative;
+    top: -12px;
+}
+
+.gb_resItms li a,
+.bdshare-button-style0-24 .bds_qzone {
+    background-position: 0 0 !important;
+    background-size: 100% 100% !important;
+}
+.share_box{
+    border-bottom: 1px solid #ccc;
+}
+.step_pian{
+    padding: 0.3rem 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.step_pian a{
+    display: block;
+    width: 100%;
     color:#666;
     font-size: 0.22rem;
 }
-.page_ul li a:hover,.act_a a{
-    color:#d10e20 !important;
-    border:1px solid #d10e20 !important;
+.step_pian a:first-child{
+    margin-bottom: 0.05rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.step_pian a span{
+    color:#333;
+}
+.you_like{
+    padding: 0.5rem 0;
+}
+.you_like p{
+    padding-left: 0.1rem;
+    font-size: 0.28rem;
+    line-height: 0.28rem;
+    margin-bottom: 0.3rem;
+    border-left: 2px solid #2d89c3;
+}
+.you_like ul li{
+    margin-top: 0.1rem;
+    padding-left: 0.1rem;
+}
+.you_like ul li a{
+    display: block;
+    width: 80%;
+    font-size: 0.22rem;
+    color: #666;
+}
 
 
 

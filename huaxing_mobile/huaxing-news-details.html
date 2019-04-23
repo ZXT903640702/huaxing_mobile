@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/hotcss.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/myCss.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/share.css">
+    <title>华星动态-详情</title>
+</head>
+<body>
+<!-- 面包屑导航 -->
+<div class="breadcrumb">
+    <div class="inner">
+        您的位置：<a href="javascript:void(0);">首页&nbsp;</a>&gt;&nbsp;<span>华星动态</span>
+    </div>
+</div>
+<!-- 内容部分 -->
+<div class="main">
+    <ul class="tab_ul clearfix">
+        <li class="tab_act"><a href="#">华星动态</a></li>
+        <li><a href="#">华星公益</a></li>
+        <li><a href="#">行业动态</a></li>
+    </ul>
+    <div class="details_box">
+        <!--标题-->
+        <div class="list_title">
+            <p>公司成立，与国内多家艺术院校、电视台等达成战略合作</p>
+            <div class="clearfix">
+                <p><img src="img/list_icon1.png" alt=""><span>华星</span></p>
+                <p><img src="img/list_icon2.png" alt=""><span>2019-01-20 10:23</span></p>
+            </div>
+        </div>
+        <!--文章内容-->
+        <div class="list_details_main clearfix">
+            <p>华星怀着一颗帮助他人的心起步，一路走来，我们始终坚持正直做人、诚信做事，始终坚持“敬天修身·达人成己”的价值观，真正做到先替别人考虑，先帮助他人，始终坚持做一个对得起客户和员工的企业，这样经营企业我们虽累犹荣。</p>
+            <p><img src="img/list_details_img1.png" alt=""></p>
+            <p>十多年前，当看到整个艺培行业处于“小、散、乱、差”的状态时，我就一直思考：如何帮助艺培机构少走弯路，减少试错成本？如何帮助艺培机构扩大产值？如何促进整个艺培产业更加规范化的发展？如何促进艺培行业从教技能向美育教育、素质教育转变？如何促进中国青少年素质教育的整体提升？这些问题是华星一直在思考并一直在解决的问题，帮助艺培机构成长，促进行业发展是我们不变的目标，华星人的理想是：能够帮助10万家艺培机构走向规范化运营，能够成就1000个千万产值和100个亿元产值的艺术培训机构。</p>
+            <p><img src="img/list_details_img2.png" alt=""></p>
+        </div>
+        <!--分享-->
+        <div class="share_box">
+            <div class="gb_resLay clearfix">
+                <div class="gb_res_t float_lf"><span>分享到</span><i></i></div>
+                <div class="bdsharebuttonbox float_lf">
+                    <ul class="gb_resItms clearfix">
+                        <li> <a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>
+                        <!--<li> <a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>-->
+                        <li> <a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>
+                        <!--<li> <a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>-->
+                        <li> <a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>
+                        <li> <a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren" data-url="http://www.internetke.com/material/img/2013/1026/26.html"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="step_pian">
+            <a href="#"><span>上一篇：</span>要实现华星人的理想，我们自己的成长学习</a>
+            <a href="#"><span>下一篇：</span>要实现华星人的理想，我们自己的成长学习</a>
+        </div>
+        <div class="you_like">
+            <p>您可能感兴趣的文章</p>
+            <ul>
+                <li><a href="#" class="txt-num1">要实现华星人的理想，我们自己的成长学习</a></li>
+                <li><a href="#" class="txt-num1">自我进化和迭代必不可少，只有持续化学习并主观只有持续化学习并主观</a></li>
+                <li><a href="#" class="txt-num1">自我迭代才是永恒的核心</a></li>
+                <li><a href="#" class="txt-num1">华星人在追求快乐工作的同时，也从来不敢停息只有持续化学习并主观</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/jquery-1.9.1.min.js"></script>
+<script src="./js/common.js"></script>
+<script type="text/javascript">
+    //全局变量，动态的文章ID
+    var ShareURL = "";
+    //绑定所有分享按钮所在A标签的鼠标移入事件，从而获取动态ID
+    $(function () {
+        $(".bdsharebuttonbox a").mouseover(function () {
+            ShareURL = $(this).attr("data-url");
+        });
+    });
+
+    /*
+    * 动态设置百度分享URL的函数,具体参数
+    * cmd为分享目标id,此id指的是插件中分析按钮的ID
+    *，我们自己的文章ID要通过全局变量获取
+    * config为当前设置，返回值为更新后的设置。
+    */
+    function SetShareUrl(cmd, config) {
+        if (ShareURL) {
+            config.bdUrl = ShareURL;
+        }
+        return config;
+    }
+
+    //插件的配置部分，注意要记得设置onBeforeClick事件，主要用于获取动态的文章ID
+    window._bd_share_config = {
+        "common": {
+            onBeforeClick: SetShareUrl, "bdSnsKey": {}, "bdText": ""
+            , "bdMini": "2", "bdMiniList": false, "bdPic": "http://www.internetke.com/uploads/allimg/131026/1-1310261J0270-L.jpg", "bdStyle": "0", "bdSize": "24"
+        }, "share": {}
+    };
+    //插件的JS加载部分
+    with (document) 0[(getElementsByTagName('head')[0] || body)
+        .appendChild(createElement('script'))
+        .src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='
+        + ~(-new Date() / 36e5)];
+</script>
+</body>
+</html>
