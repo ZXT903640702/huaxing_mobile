@@ -101,6 +101,8 @@
     border-radius: 5px;
 }
 .lunbo{
+    width: 7.5rem;
+    margin: 0 auto;
     padding-top: 1.15rem;
 }
 .lunbo .swiper-container{
@@ -113,6 +115,8 @@
 
 /* 主页 */
 .indexPage{
+    width: 7.5rem;
+    margin: 0 auto;
     background: #f8f8f8;
 }
 /* 行业专注 */
@@ -544,7 +548,8 @@
 
 /* 关于华星 */
 .main{
-    width: 100%;
+    width: 7.5rem;
+    margin: 0 auto;
 }
 .main .inner{
     width: 100%;
@@ -589,6 +594,7 @@
     width: 100%;
 }
 .main .presentation .mainContent h3,.main .presentation .mainContent p{
+    display: inline-block;
     margin-bottom: 0.3rem;
     width: 100%;
     font-size: 0.22rem;
@@ -620,7 +626,7 @@
     top: 50%;
     left: 50%;
     width: 100%;
-    height: 100%;
+    height: 50%;
     background: #fff;
     transform: translate(-50%,-50%);
 }
@@ -859,6 +865,9 @@
     font-family: "MicroSoft Yahei";
     padding-left: .6rem;
 }
+.main.community .page2 .inner .pageRight .text span{
+    display: inline-block;
+}
 .main.community .page2 .inner .pageRight .communityPoint{
     padding-left: .6rem;
 }
@@ -878,4 +887,18 @@
 .main.community .page2 .inner .pageLeft .map canvas{
     width: 7.5rem;
     height: 6.02rem;
+}
+
+/* 创始人 */
+.main .originator{
+    width: 100%;
+}
+.main .originator .originatorImg{
+    width: 6.9rem;
+    height: 8.33rem;
+}
+.main .originator .originatorImg img{
+    display: block;
+    width: 100%;
+    height: 100%;
 }
