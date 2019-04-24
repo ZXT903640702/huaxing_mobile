@@ -1,0 +1,156 @@
+
+.mCalendar {
+    font-size: 0.18rem;
+    text-align: center;
+    color: #555;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.mCalendar * {
+    padding: 0;
+    margin: 0;
+}
+
+.mCalendar .mCalendar-mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+}
+
+.mCalendar .mCalendar-container {
+    background: #f3f3f7;
+    position: relative;
+    z-index: 999;
+    -moz-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none
+}
+
+.mCalendar-header {
+    height: 0.86rem;
+    line-height: 0.86rem;
+    font-size: 0.28rem;
+    border-bottom: 1px solid #cfcfd2;
+    overflow: hidden;
+}
+
+.mCalendar-header .mCalendar-countbox {
+    float: left;
+    margin-right: 0.2rem;
+}
+
+.mCalendar-header .mCalendar-count-number {
+    margin: 0 0.05rem;
+}
+
+.mCalendar-header .mCalendar-l-arrow, .mCalendar-header .mCalendar-r-arrow {
+    color: #1a85ca;
+    display: inline-block;
+    height: 100%;
+    padding: 0 0.2rem;
+}
+
+.mCalendar-header .mCalendar-btn-item {
+    float: right;
+    margin-right: 0.1rem;
+}
+
+.mCalendar-header .mCalendar-btn-item .mCalendar-btn {
+    padding: 0.1rem 0.07rem;
+    margin: 0 0.2rem;
+}
+
+.mCalendar-header .mCalendar-cancel-btn {
+    color: #8b8b8b;
+}
+
+.mCalendar-header .mCalendar-confirm-btn {
+    color: #1a85ca;
+}
+
+.mCalendar-body {
+    padding-bottom: 0.03rem;
+    overflow: hidden;
+}
+
+.mCalendar .mCalendar-date-group {
+    position: relative;
+}
+
+.mCalendar table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.mCalendar .mCalendar-date-group table {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.mCalendar .mCalendar-date-group table:nth-child(1) {
+    -webkit-transform: translate3d(-320px, 0, 0);
+    transform: translate3d(-320px, 0, 0);
+}
+
+.mCalendar .mCalendar-date-group table:nth-child(2) {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.mCalendar .mCalendar-date-group table:nth-child(3) {
+    -webkit-transform: translate3d(320px, 0, 0);
+    transform: translate3d(320px, 0, 0);
+}
+
+.mCalendar thead th {
+    color: #b2b2b2;
+    font-weight: normal;
+}
+
+.mCalendar thead th, .mCalendar tbody td {
+    height: 0.66rem;
+    font-size: 0.26rem;
+}
+
+.mCalendar tbody td div {
+    height: 0.46rem;
+    line-height: 0.46rem;
+    width: 0.46rem;
+    display: inline-block;
+}
+
+.mCalendar tbody td.active div {
+    color: #fff;
+    border-radius: 50%;
+    background: #1a85ca;
+}
+
+.mCalendar tbody td.today {
+    color: #1a85ca;
+}
+
+.mCalendar tbody td.mendDay {
+    color: #d4d4d4;
+}
+
+.mCalendar-hide {
+    margin-left: -9999rem;
+}
+
+.mCalendar-hide .mCalendar-mask {
+    display: none;
+}

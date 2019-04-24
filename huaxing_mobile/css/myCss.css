@@ -242,7 +242,7 @@
 .list_box a .list_main div:first-child + div {
     font-size: 0.22rem;
     color: #666;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.15rem;
 }
 
 .list_box a .list_main div:first-child + div + div p {
@@ -333,69 +333,6 @@
     max-width: 100%;
     margin: 0 auto;
 }
-
-.share_box .bdsharebuttonbox {
-    font-size: 0.22rem;
-    margin: 0.3rem 0;
-    width: 5.9rem;
-}
-
-.share_box .bdsharebuttonbox .baidushare {
-    margin: 0.05rem 0 0 0.1rem;
-}
-
-.bdsharebuttonbox a {
-    width: 0.3rem !important;
-    height: 0.3rem !important;
-    margin: 0 !important;
-    float: none !important;
-    padding: 0 !important;
-    display: block;
-    border:1px solid #e5e5e5;
-}
-
-.bdsharebuttonbox a img {
-    width: 0.3rem;
-    height: 0.3rem;
-}
-
-.bdsharebuttonbox .bds_tsina {
-    background: url(../img/gbRes_6.png) no-repeat;
-}
-
-.bdsharebuttonbox .bds_qzone {
-    background: url(../img/gbRes_4.png) no-repeat;
-}
-
-.bdsharebuttonbox .bds_tqq {
-    background: url(../img/gbRes_5.png) no-repeat;
-}
-
-.bdsharebuttonbox .bds_weixin {
-    background: url(../img/gbRes_2.png) no-repeat;
-}
-
-.bdsharebuttonbox .bds_sqq {
-    background: url(../img/gbRes_3.png) no-repeat;
-}
-
-.bdsharebuttonbox .bds_renren {
-    background: url(../img/gbRes_1.png) no-repeat;
-}
-
-.bd_weixin_popup .bd_weixin_popup_foot {
-    position: relative;
-    top: -12px;
-}
-
-.gb_resItms li a,
-.bdshare-button-style0-24 .bds_qzone {
-    background-position: 0 0 !important;
-    background-size: 100% 100% !important;
-}
-.share_box{
-    border-bottom: 1px solid #ccc;
-}
 .step_pian{
     padding: 0.3rem 0;
     border-bottom: 1px solid #e5e5e5;
@@ -432,6 +369,184 @@
     font-size: 0.22rem;
     color: #666;
 }
+.kh_list{
+    margin: 0.3rem 0.3rem 0 0.3rem;
+    height: 0.56rem;
+    font-size: 0.22rem;
+    padding: 0 0.1rem;
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+}
+.kh_list form p{
+    color:#333;
+    margin-top: 0.12rem;
+}
+.kh_list form>div{
+    margin-right: 0.15rem;
+}
+.kh_list form div span{
+    color:#666;
+    float: left;
+    margin-top: 0.12rem;
+    margin-right: 0.05rem;
+}
+.kh_list form div input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 1.2rem;
+    height: 0.37rem;
+    color:#666;
+    padding: 0 0.1rem;
+    line-height: 0.37rem;
+    border:1px solid #bbb;
+    margin-top: 0.09rem;
+    font-size: 0.2rem !important;
+    background-color: transparent;
+}
+.kh_list form div select option{
+    font-size: 0.2rem !important;
+}
+.kh_main a .list_main div:first-child + div + div p:first-child{
+    margin-top: 0.1rem;
+}
+.kh_main a .list_main div:first-child + div + div p:first-child+p{
+    width: 1.3rem;
+    height: 0.42rem;
+    color: #fff;
+    float: right !important;
+    font-size: 0.22rem;
+    text-align: center;
+    line-height: 0.42rem;
+    border-radius: 0.21rem;
+    background-color: #d10e20;
+}
+.list_box a .list_main div:first-child + div + div p img{
+    width: 0.16rem;
+    height: auto;
+    margin: 0.01rem 0.05rem 0 0;
+}
+.kh_list form div .select_div{
+    position: relative;
+}
+.kh_list form div .select_div p{
+    width: 1.2rem;
+    height: 0.37rem;
+    color:#666;
+    padding: 0 0.1rem;
+    line-height: 0.37rem;
+    border:1px solid #bbb;
+    margin-top: 0.09rem;
+    font-size: 0.2rem !important;
+}
+.kh_list form div .select_div ul{
+    position: absolute;
+    top:0.55rem;
+    left:0;
+    width: 100%;
+    padding: 0.1rem;
+    background-color: #fff;
+    box-shadow: 0 0 0.05rem 0.02rem #e5e5e5;
+}
+.kh_list form div .select_div ul li{
+    text-align: center;
+    padding: 0.15rem 0;
+    border-top: 1px solid #e5e5e5;
+}
+.kh_list form div .select_div ul li:first-child{
+    border-top: 0;
+}
+.expert_ul{
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+}
+.expert_ul li{
+    margin: 0.2rem 0 0 0;
+}
+.expert_ul li a{
+    display: block;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+.expert_ul li a .expert_img{
+    width: 3.09rem;
+    padding: 0.16rem 0 0 0;
+    background-color: #f3f3f3;
+}
+.expert_ul li a img{
+    height: 3.8rem;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.expert_ul li a .expert_txt{
+    width: 3.70rem;
+    height: 3.96rem;
+    padding: 0.36rem 0.16rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.expert_ul li a .expert_txt .ex_name p{
+    font-size: 0.32rem;
+    margin-bottom: 0.1rem;
+}
+.expert_ul li a .expert_txt .ex_name .line_bot{
+    width: 0.46rem;
+    border-bottom: 2px solid #1a85ca;
+}
+.expert_ul li a .expert_txt .expert_exp{
+    height: 1.78rem;
+    margin: 0.3rem 0;
+    overflow: hidden;
+}
+.expert_ul li a .expert_txt .expert_exp p{
+    font-size: 0.2rem;
+    margin-bottom: 0.02rem;
+}
+.expert_ul li a .expert_txt .look_details{
+    color:#1a85ca;
+    font-size: 0.2rem;
+    position: absolute;
+    bottom:0.25rem;
+    left:0.1rem;
+}
+.expert_details{
+    padding: 0.3rem 0.3rem;
+}
+.expert_details li a .expert_txt{
+    padding: 0.36rem;
+    background-color: #fff;
+}
+.expert_details li a .expert_txt .expert_exp{
+    height: auto;
+}
+.expert_details li a .expert_txt .expert_exp p{
+    line-height: 0.3rem;
+}
+.details_item{
+    padding: 0.3rem;
+}
+
+.details_item p{
+    display: block;
+    max-height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.34rem;
+}
+.details_item .titles{
+    color:#fff;
+    display: inline-block;
+    font-size: 0.24rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.05rem;
+    background-color: #1a85ca;
+    margin-bottom: 0.15rem;
+}
+.details_main{
+    padding-bottom: 0.4rem;
+}
+
+
+
 
 
 
