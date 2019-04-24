@@ -1388,6 +1388,12 @@
     padding-top: .2rem;
     padding-bottom: .35rem;
 }
+.main.commercial .commercialTitle{
+    text-indent: 2em;
+    font-size: 0.24rem;
+    line-height: .42rem;
+    margin-bottom: .3rem;
+}
 .main.commercial .inner .mainContent{
     display: flex;
     justify-content: space-between;
