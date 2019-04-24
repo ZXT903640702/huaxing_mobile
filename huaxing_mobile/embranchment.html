@@ -29,8 +29,8 @@
     <div class="breadcrumb">
         <div class="inner">
             <span>您的位置：</span>
-            <a href="javascript:void(0);">首页&nbsp;</a><b>&gt;&nbsp;</b>
-            <a href="javascript:void(0);">关于华星&nbsp;</a><b>&gt;&nbsp;</b>
+            <a href="javascript:void(0);">首页</a><b>&nbsp;&gt;&nbsp;</b>
+            <a href="javascript:void(0);">关于华星</a><b>&nbsp;&gt;&nbsp;</b>
             <span>分支机构</span>
         </div>
     </div>
@@ -38,7 +38,17 @@
     <div class="main embranchment">
         <div class="inner">
             <div class="mainContent">
-                <div class="filter"></div>
+                <div class="filter">
+                    <span>筛选：</span>
+                    <select name="" id="province">
+                        <option value="">省份</option>
+                    </select>
+                    <span>省</span>
+                    <select name="" id="city">
+                            <option value="">城市</option>
+                    </select>
+                    <span>市</span>
+                </div>
                 <div class="embranchmentList">
                     <a href="javascript:;" class="listItem">
                         <div class="itemLeft"><img src="./img/embranchmentImg1.jpg" alt=""></div>
@@ -70,6 +80,31 @@
     </div>
 
     <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/city.js"></script>
     <script src="./js/common.js"></script>
+    <script>
+        for (var i = 0; i < cityStr.length; i++) {
+            $("#province").append('<option value="'+cityStr[i].name+'">'+cityStr[i].name+'</option>');
+        };
+        //当省份被选中时
+        $("#province").on( 'change', function(event) {
+            //清空城市
+            $("#city option").eq(0).siblings().remove();
+
+            if($(this).val() == ""){
+                return;
+            }
+
+            for (var i = 0; i < cityStr.length; i++) {
+                if(cityStr[i].name == $(this).val()){
+                    provinceIdx = i;
+                    for (var j = 0; j < cityStr[i].city.length; j++) {
+                        $("#city").append('<option value="'+cityStr[i].city[j].name+'">'+cityStr[i].city[j].name+'</option>');
+                    };
+                    break;
+                };
+            };
+        });
+    </script>
 </body>
 </html>

@@ -221,16 +221,16 @@ body{
 .breadcrumb .inner{
     padding: 0 .3rem;
     margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .breadcrumb .inner span{
-    display: inline-block;
 }
 .breadcrumb .inner b{
-    display: inline-block;
     font-weight: 400;
 }
 .breadcrumb .inner a{
-    display: inline-block;
     color: #999;
     font-size: 0.2rem;
 }
