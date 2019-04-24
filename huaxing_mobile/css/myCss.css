@@ -456,19 +456,94 @@
 .kh_list form div .select_div ul li:first-child{
     border-top: 0;
 }
+.expert_ul{
+    padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+}
+.expert_ul li{
+    margin: 0.2rem 0 0 0;
+}
+.expert_ul li a{
+    display: block;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+.expert_ul li a .expert_img{
+    width: 3.09rem;
+    padding: 0.16rem 0 0 0;
+    background-color: #f3f3f3;
+}
+.expert_ul li a img{
+    height: 3.8rem;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.expert_ul li a .expert_txt{
+    width: 3.70rem;
+    height: 3.96rem;
+    padding: 0.36rem 0.16rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.expert_ul li a .expert_txt .ex_name p{
+    font-size: 0.32rem;
+    margin-bottom: 0.1rem;
+}
+.expert_ul li a .expert_txt .ex_name .line_bot{
+    width: 0.46rem;
+    border-bottom: 2px solid #1a85ca;
+}
+.expert_ul li a .expert_txt .expert_exp{
+    height: 1.78rem;
+    margin: 0.3rem 0;
+    overflow: hidden;
+}
+.expert_ul li a .expert_txt .expert_exp p{
+    font-size: 0.2rem;
+    margin-bottom: 0.02rem;
+}
+.expert_ul li a .expert_txt .look_details{
+    color:#1a85ca;
+    font-size: 0.2rem;
+    position: absolute;
+    bottom:0.25rem;
+    left:0.1rem;
+}
+.expert_details{
+    padding: 0.3rem 0.3rem;
+}
+.expert_details li a .expert_txt{
+    padding: 0.36rem;
+    background-color: #fff;
+}
+.expert_details li a .expert_txt .expert_exp{
+    height: auto;
+}
+.expert_details li a .expert_txt .expert_exp p{
+    line-height: 0.3rem;
+}
+.details_item{
+    padding: 0.3rem;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+.details_item p{
+    display: block;
+    max-height: 100%;
+    font-size: 0.22rem;
+    line-height: 0.34rem;
+}
+.details_item .titles{
+    color:#fff;
+    display: inline-block;
+    font-size: 0.24rem;
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.05rem;
+    background-color: #1a85ca;
+    margin-bottom: 0.15rem;
+}
+.details_main{
+    padding-bottom: 0.4rem;
+}
 
 
 
