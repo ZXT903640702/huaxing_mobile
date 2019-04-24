@@ -41,7 +41,6 @@
         <!-- 路线图 -->
         <div class="page2">
             <div class="inner">
-                <!-- 地图 -->
                 <!-- 文字 -->
                 <div class="pageRight">
                     <div class="title">五届公益的路线图</div>
@@ -67,6 +66,7 @@
                     </div>
                     <img src="./img/communityPoint.png" class="communityPoint" alt="">
                 </div>
+                <!-- 地图 -->
                 <div class="pageLeft">
                     <div class="map">
                         <canvas id="myCanvas" width="709" height="602">您的浏览器不支持canvas</canvas>
@@ -80,24 +80,6 @@
     <script src="./js/Map.js"></script>
     <script src="./js/Point.js"></script>
     <script>
-        //公益的地图
-        // $(".map").on("mouseenter","span",function(){
-        //     var top = $(this).position().top;
-        //     var left = $(this).position().left;
-        //     var src = $(this).attr("data-src");
-        //     $(".map .mapPopUp img").attr("src",src);
-        //     $(".map .mapPopUp").css({
-        //         "display":"block",
-        //         "top" : top - 90,
-        //         "left": left - 30
-        //     });
-        // });
-        // $(".map").on("mouseleave","span",function(){
-        //     $(".map .mapPopUp").css({
-        //         "display":"none",
-        //     });
-        // });
-
         var map = new Map();
         new Point({
             province: "四川",
