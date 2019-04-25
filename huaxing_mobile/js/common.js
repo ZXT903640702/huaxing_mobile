@@ -68,6 +68,23 @@ $(".pageNav .header .navBtn").on("click",function(){
 });
 
 //回到顶部
+var timer = null;
 $(".scrollTop").on("click",function(){
-    $("html").stop().animate({"scrollTop":0},500);
+    if(/UC/g.test(navigator.userAgent)){
+        if(timer){
+            clearInterval(timer);
+        };
+        var scrollAmont = $(document).scrollTop();
+        var i = 1;
+        timer = setInterval(function(){
+            i++;
+            var move = scrollAmont / 50;
+            $(document).scrollTop(scrollAmont - move * i);
+            if($(document).scrollTop() <= 0){
+                clearInterval(timer);
+            };
+        },10);
+    }else{
+        $("html").stop().animate({"scrollTop":0},500);
+    }
 });

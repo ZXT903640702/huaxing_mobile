@@ -19,7 +19,14 @@
     width: 1.26rem;
     height: .58rem;
     border: 1px solid #ccc;
+    background-color: #fff;
     font-size: 0.22rem;
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+    background: url("../img/xjt.png") no-repeat 90% center;
+    background-size: .1rem .07rem;
+    padding-left: .1rem;
 }
 .searchBox form .search{
     float: left;
