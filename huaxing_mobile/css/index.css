@@ -19,6 +19,7 @@
     width: 1.26rem;
     height: .58rem;
     border: 1px solid #ccc;
+    font-size: 0.22rem;
 }
 .searchBox form .search{
     float: left;
@@ -44,14 +45,14 @@
     outline: none;
 }
 .searchBox .searchMain{
-    padding: .2rem .2rem 0;
+    padding: 0 .2rem;
     border-top: 1px solid #e5e5e5;
 }
 .searchBox .searchMain .mainItem{
     display: block;
     position: relative;
     overflow: hidden;
-    padding-bottom: .2rem;
+    padding: .2rem 0;
     border-bottom: 1px solid #e5e5e5;
 }
 .searchBox .searchMain .mainItem .itemLeft{

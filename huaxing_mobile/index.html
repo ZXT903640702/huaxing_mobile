@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        if(!/\.html/g.test(location.pathname)){
+            location.href = "index.html";
+        };
+    </script>
     <script src="js/hotcss.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/swiper.min.css">
@@ -30,7 +35,7 @@
         <!-- 一级导航 -->
         <ul class="firstNav">
             <li>
-                <a href="javascript:;" class="navSelect action">关于华星</a>
+                <a href="javascript:;" class="navSelect ">关于华星</a>
                 <!-- 二级导航 -->
                 <ol class="secondNav">
                     <li>
