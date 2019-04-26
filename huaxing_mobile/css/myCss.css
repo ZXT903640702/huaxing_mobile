@@ -527,7 +527,6 @@
 }
 
 .details_item p{
-    display: block;
     max-height: 100%;
     font-size: 0.22rem;
     line-height: 0.34rem;
