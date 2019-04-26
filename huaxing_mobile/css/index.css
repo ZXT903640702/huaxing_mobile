@@ -19,6 +19,14 @@
     width: 1.26rem;
     height: .58rem;
     border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 0.22rem;
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+    background: url("../img/xjt.png") no-repeat 90% center;
+    background-size: .1rem .07rem;
+    padding-left: .1rem;
 }
 .searchBox form .search{
     float: left;
@@ -44,14 +52,14 @@
     outline: none;
 }
 .searchBox .searchMain{
-    padding: .2rem .2rem 0;
+    padding: 0 .2rem;
     border-top: 1px solid #e5e5e5;
 }
 .searchBox .searchMain .mainItem{
     display: block;
     position: relative;
     overflow: hidden;
-    padding-bottom: .2rem;
+    padding: .2rem 0;
     border-bottom: 1px solid #e5e5e5;
 }
 .searchBox .searchMain .mainItem .itemLeft{
@@ -118,6 +126,7 @@
     width: 7.5rem;
     margin: 0 auto;
     background: #f8f8f8;
+    padding-bottom: .3rem;
 }
 /* 行业专注 */
 .page{
@@ -301,8 +310,8 @@
     position: absolute;
     left: 0;
     top: 50%;
-    width: 5px;
-    height: 5px;
+    width: .05rem;
+    height: .05rem;
     background: #ccc;
     border-radius: 50%;
 }
@@ -561,6 +570,7 @@
     padding: .3rem .3rem 0;
     box-sizing: border-box;
     text-align: center;
+    margin-bottom: 0.3rem;
 }
 .main .inner .mainTitle .title{
     font-size: 0.36rem;
@@ -592,6 +602,7 @@
 }
 .main .presentation .mainContent{
     width: 100%;
+    line-height: 0.48rem;
 }
 .main .presentation .mainContent h3,.main .presentation .mainContent p{
     display: inline-block;
@@ -810,9 +821,9 @@
 }
 .awardPopUp .popCont .popText{
     color: #666;
-    padding: 0 60px;
+    padding: 0 .6rem;
     text-indent: 2em;
-    line-height: 26px;
+    line-height: 0.38rem;
     font-size: 0.2rem;
 }
 
@@ -825,15 +836,27 @@
 }
 .main.community .page1 .inner .pageLeft{
     font-family: "YRDZSTRegular";
-    line-height: 26px;
+    line-height: .32rem;
+    color: #333333;
+    margin-bottom: 0.53rem;
 }
 .main.community .page1 .inner .pageLeft .title{
+    display: block;
+    max-height: 100%;
     text-align: center;
     font-size: .36rem;
-    margin-bottom: .4rem;
+    margin-bottom: .25rem;
 }
 .main.community .page1 .inner .pageLeft .text{
+    display: block;
+    max-height: 100%;
     text-indent: 2em;
+    font-size: .22rem;
+    margin-bottom: 0.29rem;
+}
+.main.community .page1 .inner .pageLeft .preface{
+    display: block;
+    max-height: 100%;
     font-size: .22rem;
 }
 .main.community .page1 .inner .pageLeft .text:last-child{
@@ -1061,6 +1084,28 @@
     padding-bottom: .56rem;
 }
 .main.embranchment .mainContent .filter{
+    font-size: 0.22rem;
+    color: #333;
+    line-height: 0.56rem;
+    background-color: #f8f8f8;
+}
+.main.embranchment .mainContent .filter span,
+.main.embranchment .mainContent .filter select{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main.embranchment .mainContent .filter select{
+    width: 1.25rem;
+    background-color: #f8f8f8;
+    border: 1px solid #e5e5e5;
+    appearance:none;  
+    -moz-appearance:none;  
+    -webkit-appearance:none;
+    background: url("../img/xjt.png") no-repeat right center;
+    background-size: .1rem .07rem;
+    padding-left: .1rem;
+    box-sizing: border-box;
+    outline: none;
 }
 .main.embranchment .mainContent .embranchmentList{
 }
@@ -1351,6 +1396,12 @@
     padding-top: .2rem;
     padding-bottom: .35rem;
 }
+.main.commercial .commercialTitle{
+    text-indent: 2em;
+    font-size: 0.24rem;
+    line-height: .42rem;
+    margin-bottom: .3rem;
+}
 .main.commercial .inner .mainContent{
     display: flex;
     justify-content: space-between;
@@ -1516,4 +1567,31 @@
 }
 .main.commercialDetail .mainContent .courseMsg .msgBlock .courseImg img{
     width: 100%;
+}
+
+/* 联系我们 */
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p{
+    background: none;
+    padding-left: 0;
+}
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.phone,
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.qq,
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.mail,
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.address,
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.route{
+    background: url(../img/phone2.png) no-repeat left center;
+    background-size: .25rem;
+    padding-left: .4rem;
+}
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.qq{
+    background-image: url(../img/msg2.png);
+}
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.mail{
+    background-image: url(../img/mail.png);
+}
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.address{
+    background-image: url(../img/mapP.png);
+}
+.main.embranchmentDetail.aboutUs .contact .contactDetail .contactLeft p.route{
+    background-image: url(../img/bus.png);
 }
