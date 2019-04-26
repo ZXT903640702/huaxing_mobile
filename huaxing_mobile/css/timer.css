@@ -703,6 +703,7 @@ body{
 }
 #centerCalendarMain {
 	float: left;
+	overflow: hidden;
 }
 
 /*默认弹出菜单*/

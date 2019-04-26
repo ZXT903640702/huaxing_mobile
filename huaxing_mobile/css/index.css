@@ -704,6 +704,7 @@
     margin-bottom: .3rem;
     padding-left: .3rem;
     font-size: 0.2rem;
+    max-height: 100%;
     background: url(../img/point.png) no-repeat left center;
 }
 .main .corporateHistory .mainContent .timerShaft .timerItem .itemText .itemContent p:last-child{
@@ -1138,7 +1139,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-bottom: 0.31rem;
+    margin-bottom: 0.2rem;
 }
 .main.embranchment .mainContent .embranchmentList .listItem .itemRight .text{
     display: block;
@@ -1460,6 +1461,7 @@
     text-align: center;
     line-height: 0.42rem;
     font-size: 0.2rem;
+    margin-right: 0.15rem;
 }
 
 /* 商学课程详情 */
